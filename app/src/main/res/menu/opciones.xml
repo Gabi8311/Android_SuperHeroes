@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mMostrar"
+        android:title="Mostrar Imagenes" />
+    <item
+        android:id="@+id/mJugar"
+        android:title="@string/btn_jugar" />
+    <item
+        android:id="@+id/mSalir"
+        android:title="Salir" />
+</menu>

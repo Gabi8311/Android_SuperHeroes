@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Entrega2</string>
+    <string name="welcome">Marvel &amp; DC App</string>
+    <string name="introduce_usuario">Introduce tu nombre de Usuario</string>
+    <string name="introduce_password">Introduce tu Password</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Password</string>
+    <string name="btn_enter">Entrar</string>
+    <string name="usuario_incorrecto">** Usuario Incorrecto **</string>
+    <string name="password_incorrecto">** Contraseña Incorrecta **</string>
+    <string name="elige_superheroe">Elige Personaje</string>
+    <string name="btn_mostrar">Mostrar</string>
+    <string name="campo_obligatorio">** Campo obligatorio **</string>
+    <string name="intro_numeros">Introduce números</string>
+    <string name="btn_salir">Salir</string>
+    <string name="btn_volver">Volver</string>
+    <string name="btn_jugar">Jugar</string>
+    <string name="elige_personajes">Elige los Personajes de tu Equipo</string>
+    <string name="btn_empezar">Empezar</string>
+
+</resources>
