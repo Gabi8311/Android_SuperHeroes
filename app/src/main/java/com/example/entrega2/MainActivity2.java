@@ -81,7 +81,7 @@ public class MainActivity2 extends AppCompatActivity {
         return super.onContextItemSelected(item);
     }
 
-    public static class MainActivity extends AppCompatActivity {
+   /* public static class MainActivity extends AppCompatActivity {
         private ConstraintLayout cL_1;
         private TextView tV_user;
         private TextView tV_password;
@@ -171,4 +171,4 @@ public class MainActivity2 extends AppCompatActivity {
             });
         }
     }
-}
+*/}
