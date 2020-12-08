@@ -2,13 +2,16 @@ package com.example.entrega2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,8 +23,9 @@ public class MainActivity4 extends AppCompatActivity {
     private ImageView iV_2;
     private ImageView iV_3;
     private ImageView iV_4;
+    private Button btn_empezar4;
     private ArrayList<String> elige_super_heroe;
-    private static ArrayList<String>equipo = new ArrayList<>();
+    protected static ArrayList<String>equipo = new ArrayList<>();
 
 
     @Override
@@ -34,13 +38,12 @@ public class MainActivity4 extends AppCompatActivity {
         iV_2 = findViewById(R.id.iV_2_4);
         iV_3 = findViewById(R.id.iV_3_4);
         iV_4 = findViewById(R.id.iV_4_4);
+        btn_empezar4 = findViewById(R.id.btn_empezar4);
 
         elige_super_heroe = new ArrayList<>(Arrays.asList("Elige Personaje", "Superman", "Batman", "Thor", "Hulk", "Iron-Man", "Aquaman", "Capitan América"));
 
         ArrayAdapter<String> ad_4 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, elige_super_heroe);
         sp_4.setAdapter(ad_4);
-
-
 
         sp_4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
@@ -88,10 +91,25 @@ public class MainActivity4 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+
+        btn_empezar4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast toast4 = Toast.makeText(getApplicationContext(), "Empieza la Partida", Toast.LENGTH_SHORT);
+                toast4.show();
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                goToActivity5(v);
+            }
+        });
     }
-//Aki miro si es la imagen de anonimo
+//Aquí miro si es la imagen de anónimo
     public ImageView comprobar_casilla_ocupada() {
-        System.out.println();
+
         if (iV_1.getDrawable().getConstantState().equals(getResources().getDrawable(R.drawable.anonimo).getConstantState())) {
           return iV_1;
         } else if (iV_2.getDrawable().getConstantState().equals(getResources().getDrawable(R.drawable.anonimo).getConstantState())) {
@@ -102,5 +120,10 @@ public class MainActivity4 extends AppCompatActivity {
             return iV_4;
         }
         return null;
+    }
+    //Método que permite cambiar de actividad
+    public void goToActivity5(View view) {
+        Intent fifthActivity = new Intent(this, MainActivity5.class);
+        startActivity(fifthActivity);
     }
 }

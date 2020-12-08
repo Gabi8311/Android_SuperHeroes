@@ -17,5 +17,9 @@
     <string name="btn_jugar">Jugar</string>
     <string name="elige_personajes">Elige los Personajes de tu Equipo</string>
     <string name="btn_empezar">Empezar</string>
+    <string name="tu_rival">Vuestro rival en la Batalla es: </string>
+    <string name="empieza_la_batalla">Empieza la Batalla</string>
+    <string name="batalla">Batalla!!</string>
+    <string name="tu_equipo">Tu Equipo</string>
 
 </resources>

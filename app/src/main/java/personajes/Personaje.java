@@ -1,5 +1,7 @@
 package personajes;
 
+import android.widget.TextView;
+
 public abstract class Personaje {
     private String nombre;
     private int fuerza;
@@ -14,7 +16,7 @@ public abstract class Personaje {
         this.vida = vida;
     }
 
-    public abstract Integer atacar();
+    public abstract Integer atacar(TextView tV);
 
 
     public String getNombre() {

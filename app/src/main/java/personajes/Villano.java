@@ -1,5 +1,7 @@
 package personajes;
 
+import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -10,12 +12,13 @@ public class Villano extends Personaje {
     public Villano() {
     }
 
-    public Villano(ArrayList<Magia> magias) {
+    public Villano(String nombre, int fuerza, int vida, ArrayList<Magia> magias) {
+        super(nombre, fuerza, vida);
         this.magias = magias;
     }
 
     @Override
-    public Integer atacar() {
+    public Integer atacar(TextView tV) {
 
         Random r = new Random();
         Integer ataque;
@@ -30,7 +33,7 @@ public class Villano extends Personaje {
             } else {
                 golpe = this.getFuerza() * 2;
             }
-            System.out.println("Su ataque provoca un daño de " + golpe);
+            tV.append("\nSu ataque provoca un daño de " + golpe);
         } else {
             ataque = r.nextInt(2);
             if (ataque == 1) {
@@ -44,7 +47,7 @@ public class Villano extends Personaje {
                         } else {
                             golpe = this.magias.get(0).getPoder() * 2;
                         }
-                        System.out.println("Ataca con " + this.magias.get(0).getNombre() + ",con daño " + golpe);
+                        tV.append("\nAtaca con " + this.magias.get(0).getNombre() + ",con daño " + golpe);
                         break;
 
                     case 1:
@@ -54,7 +57,7 @@ public class Villano extends Personaje {
                         } else {
                             golpe = this.magias.get(1).getPoder() * 2;
                         }
-                        System.out.println("Ataca con " + this.magias.get(1).getNombre() + ",con daño " + golpe);
+                        tV.append("\nAtaca con " + this.magias.get(1).getNombre() + ",con daño " + golpe);
                         break;
 
                     case 2:
@@ -64,7 +67,7 @@ public class Villano extends Personaje {
                         } else {
                             golpe = this.magias.get(2).getPoder() * 2;
                         }
-                        System.out.println("Ataca con " + this.magias.get(2).getNombre() + ",con daño " + golpe);
+                        tV.append("\nAtaca con " + this.magias.get(2).getNombre() + ",con daño " + golpe);
                         break;
                 }
             }

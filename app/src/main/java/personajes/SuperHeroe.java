@@ -1,5 +1,7 @@
 package personajes;
 
+import android.widget.TextView;
+
 import java.util.Random;
 
 public class SuperHeroe extends Personaje{
@@ -12,7 +14,7 @@ public class SuperHeroe extends Personaje{
     }
 
     @Override
-    public Integer atacar() {
+    public Integer atacar(TextView tv) {
 
         Random r = new Random();
         Integer ataque;
