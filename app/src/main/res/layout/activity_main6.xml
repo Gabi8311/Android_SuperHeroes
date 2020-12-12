@@ -24,72 +24,70 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="450dp"
-        android:weightSum="8"
+    <ImageView
+        android:id="@+id/iV_1_6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        app:srcCompat="@drawable/anonimo" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="8">
+    <ImageView
+        android:id="@+id/iV_2_6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        app:srcCompat="@drawable/anonimo" />
 
-            <ImageView
-                android:id="@+id/iV_1_6"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginLeft="18dp"
-                app:srcCompat="@drawable/anonimo" />
+    <ImageView
+        android:id="@+id/iV_3_6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        app:srcCompat="@drawable/anonimo" />
 
-            <ImageView
-                android:id="@+id/iV_2_6"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginLeft="18dp"
-                app:srcCompat="@drawable/anonimo" />
+    <ImageView
+        android:id="@+id/iV_4_6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        app:srcCompat="@drawable/anonimo" />
 
-            <ImageView
-                android:id="@+id/iV_3_6"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginLeft="18dp"
-                app:srcCompat="@drawable/anonimo" />
-
-            <ImageView
-                android:id="@+id/iV_4_6"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginLeft="18dp"
-                app:srcCompat="@drawable/anonimo" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="8">
-
-            <TextView
-                android:id="@+id/tV_equipo6"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="8"
-                android:text="@string/tu_equipo"
-                android:textAlignment="center"
-                android:textColor="@color/purple_500"
-                android:textSize="20dp"
-                android:textStyle="bold|italic" />
-        </TableRow>
-
-    </TableLayout>
+    <TextView
+        android:id="@+id/tV_equipo6"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="8"
+        android:text="@string/tu_equipo"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
 
     <ImageView
         android:id="@+id/iV_rival6"
@@ -97,10 +95,9 @@
         android:layout_height="192dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599"
+        app:layout_constraintVertical_bias="0.56"
         app:srcCompat="@drawable/anonimo" />
 
     <TextView

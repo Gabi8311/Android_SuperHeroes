@@ -70,6 +70,7 @@ public class MainActivity5 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
                 Toast toast5 = Toast.makeText(getApplicationContext(), "Empieza la Batalla!!", Toast.LENGTH_SHORT);
                 toast5.show();
 
@@ -95,4 +96,5 @@ public class MainActivity5 extends AppCompatActivity {
         Intent sixthActivity = new Intent(this, MainActivity6.class);
         startActivity(sixthActivity);
     }
+
 }
